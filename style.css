@@ -1,0 +1,524 @@
+
+body{
+    background-color: rgb(177, 175, 175);
+}
+
+nav{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    gap: 1080px;
+    padding: 5px;
+    margin: 0px;
+    height: 40px;
+    padding-top: 15px;
+    
+}
+
+nav img{
+    width: 20px;
+    height: 20px;
+
+}
+
+nav img:hover{
+    background-color: rgb(201, 198, 198);
+    color: black;
+}
+
+#social{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.partie1 .top h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.partie1 .top p span {
+    color: white;
+    background-color: black;
+    font-weight: bold;
+    height: 30px;
+    padding: 5px;
+}
+
+.partie1 .top p {
+    text-align: center;
+}
+
+.partie1 .image{
+    height: 1000px;
+    background-image: url(jane.jpg);
+    color: white;
+}
+
+.partie1 .image p{
+    padding-top: 30%;
+    font-size: 40px;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+.partie1 .image p span{
+    font-size: 50px;
+    font-family: sans-serif;
+}
+
+.partie1 button{
+    height: 50px;
+    margin-left: 30px;
+    background-color: rgba(154, 150, 150, 0.7);
+    margin-top: -20px;
+    width: 100px;
+}
+
+.partie1 button:hover{
+    background-color: white;
+}
+
+/* ------------------------------------partie2------------------------------------- */
+
+.partie2{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+ .left2 {
+background-color: white;
+width: 65%;
+padding: 20px;
+height: 1050px;
+}
+
+ .left2 h3{
+    text-align: center;
+}
+
+.left2  .image2 img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.left2 p{
+text-align: center;
+}
+
+.left2 p span{
+    color: gray;
+}
+
+.text span {
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: sans-serif;
+}
+
+.text{
+    font-size: 18px;
+}
+
+.like{
+    display: flex;
+    flex-direction: row;
+    gap: 650px;
+    margin: 20px;
+}
+
+button{
+    height: 40px;
+    width: 100px;
+    background-color: white;
+}
+
+button:hover{
+    background-color: grey;
+}
+
+.text{
+    margin-bottom: 20px;
+}
+
+.replie{
+    color: white;
+    background-color: black;
+}
+
+.replie span{
+    background-color: white;
+    color: black;
+    width: 15px;
+}
+
+.bottome2{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 20px;
+}
+
+.bottome2  .gauche img{
+   width: 110px;
+}
+
+.right2{
+    display: flex;
+    flex-direction: column;
+}
+
+.replie:hover{
+    color: black;
+}
+
+.pspan{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin-top: -5px;
+}
+
+.top22 img{
+    width: 100%;
+}
+
+
+.top222{
+    color: white;
+    background-color: black;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+.top222 p{
+    text-align: left;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.milieu22 img{
+    width: 70px;
+}
+
+
+.milieu222{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    background-color: white;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+
+.milieu222 p{
+    font-size: 18px;
+}
+
+.milieu223{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    background-color: white;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+
+.milieu223 p{
+    font-size: 18px;
+}
+
+.right22{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    background-color: white;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+.right22 p{
+    font-size: 18px;
+}
+
+.milieu221{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    background-color: white;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+
+.milieu221 p{
+    font-size: 18px;
+}
+
+.bottome22 p{
+    color: white;
+    background-color: black;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+    padding: 15px;
+    margin-top: 50px;
+}
+
+.bottome22 div {
+    background-color: white;
+    padding: 20px;
+    margin-top: -20px;
+    
+}
+
+.bottome22 div p{
+    background-color: grey;
+    height: 140px;
+    margin: 20px;
+    line-height: 150px;
+    text-align: center;
+    color: black;
+    font-size: 15px;
+}
+
+
+/* ---------------------------------------partie3---------------------------------------- */
+
+.partie3{
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+    gap: 20px;
+}
+
+.partie3 .left2{
+    height: 850px;
+}
+
+.right3 .top33 p{
+color: white;
+background-color: black;
+text-align: left;
+font-size: 20px;
+font-family: sans-serif;
+font-weight: bold;
+padding: 20px;
+width: 350px;
+}
+
+.span33{
+    padding: 10px;
+    background-color: white;
+    margin-top: -20px;
+    height: 150px;
+    padding-top: 30px;
+    padding-left: 15px;
+
+}
+
+
+.right3 .top33 span{
+background-color: rgb(205, 204, 204);
+padding: 5px;
+}
+
+ .span33 .spn1{
+    background-color: black;
+    color: white;
+}
+
+.right3 .milieu33 p{
+    color: white;
+    background-color: black;
+    text-align: left;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 20px;
+    width: 350px;
+}
+
+.image33 img{
+  width: 180px;
+  height: 130px;  
+}
+
+.image33{
+    display: grid;
+    grid-template-columns: 180px 180px;
+    grid-template-rows: 130px 130px;
+    gap: 10px;
+    background-color: white;
+    padding: 10px;
+    margin-top: -20px;
+    
+}
+
+.right3 .bottome33 p{
+    color: white;
+    background-color: black;
+    text-align: left;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 20px;
+    width: 350px;
+}
+
+.social33 {
+    background-color: white;
+    padding: 20px;
+    margin-top: -20px;
+}
+
+.social33 img :hover{
+    background-color: rgba(224, 221, 221, 0.5);
+}
+
+/* --------------------------------------partie4---------------------------------------- */
+
+.partie4{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.partie4 .left2{
+    height: 850px;
+}
+
+.right4 p{
+    color: white;
+    background-color: black;
+    text-align: left;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 20px;
+    width: 350px;
+}
+
+.right4 input{
+    width: 300px;
+    border: 0.5px solid grey;
+    height: 40px;
+}
+
+.right4 input[type="submit"]{
+    background-color: rgb(240, 60, 60);
+    color: white;
+    text-align: center;
+    width: 305px;
+    border: none;
+}
+
+.right4 input[type="submit"]:hover{
+    background-color: rgb(148, 148, 148);
+    color: black;
+}
+
+.formule4 p{
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    font-weight: normal;
+    margin-left: -15px;
+    width: 330px;
+
+}
+.formule4{
+    background-color: white;
+    padding: 20px;
+    padding-right: 0px;
+    margin-top: -20px;
+}
+
+/* -----------------------------------footer--------------------------- */
+
+footer{
+    background-color: rgb(93, 92, 92);
+    color: white;
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 70px;
+    margin-top: 50px;
+}
+
+
+
+.top-foot{
+    background-color: black;
+    color: white;
+    width: 100px;
+}
+
+.top-foot:hover{
+    background-color: rgb(145, 142, 142);
+    color: black;
+}
+
+.top-foot a:hover{
+    color: black;
+}
+
+.top-foot a{
+    text-decoration: none;
+}
+
+.top-foot a span{
+    line-height: 30px;
+}
+
+footer p a{
+    color: white;
+}
+
+.top-foot a span{
+    color: white;
+    border: none;
+}
+
+.top-foot a span:hover{
+    color: black;
+}
+
+@media screen and (max-width=780px){
+
+    body{
+        width: 100%;
+    }
+
+.partie1{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.partie2{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.partie3{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.partie4{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+}

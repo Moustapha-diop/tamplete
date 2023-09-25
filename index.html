@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>template</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav>
+          <div id="social">
+            <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAASdJREFUSEvtlK1OxEAQx3/TCyFowNA27VpwCAQGwwOQEO4NICAxKAwCj4MEi+MMwSIQWHgASLjd0kACvAIdck0F4eOu19LkxK2aZHf+v/naERo+0rA+owVwzi14cCiqS8AM8AycBXG8/1clSmeQJMmcl2WPwOQ3sU4Qxxu1Aalzx6hu/xBSPQ+MadcHWHsLLBZC134UrYrIx6AhKV2i1NpXYDYXVN0JjDkZJN67HwbwDkzn+iJbYRSd1gakzrU1y+bzSET2gKkig0uFu57ted6NH0VXlXqQWtsB1vtGqrobGHPUGEBU13xjLioBnrrdAxFZKZyXgYnCvgde8n60WpthGD5UAnx1Sq19K37v/zV5DBj2o4170H+zND6mZRbbb29Kb9ORBXwCpvZ+Gcxcb9sAAAAASUVORK5CYII="/></a>
+            <a href="#"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAA01JREFUSEvFlV9oHFUUxr9zZ3ela9ViIGL37s7ZlViaPhYUKVUEWxUEsfEvFKPgS1soIpQK4ouI/0rpgw8WafChEixYlQo++OdBmyLok9iSlpjM3MxsGsQqSrVpuzOfTNiEye7GxofQ+zZzv3t+fOfcc65glZescnxcH8D09PQdJk3fAbDjGg4J8jRETiYiB33fn+rUdzlohuEeAocAGBE5RfI7kkkvkIgURGQryS0AEgJ7qqpH8tolgCgI7haR7wGclTR9rNJonFtJjZpTUxtozAkAdXre5mq1+vPCuSWAOAw/B/AgPW9TtVqdWEnwBU08OXknPO80yE9tvf7UcoBfAZyxqvfng1+YmLj5Uqn0MtJ0k4hkqRgvlctv9vf3X8zrms59S3K9VR1YDpBA5Kj1/ecWBM3JyRo970sAGzocjaNQ2G6tjRe1YfghgUes6rouwOzs7I2tubmLArxbUd2bCUhK07mx+dwC+1rkN9n/ojHbhXybwC8V379XRJj9j8JwRICdVvWGLkAQBOuKIn8AOGRVX2of2CHAcQJDVdVP8g5i554EeUyMebRSq2UFzgBHBHjWqpa6APN5Lhb/zDtoBsFbFNlfKpdv6sx3HMd9aLV+A/C6VX01C9gMw/cJPG9Vi8umCCKHre/vmj/QBqy5evWWvoGBv/IOoii6VZLkAoA3rOor2V7s3GGQL1jVQhdgZmamnF658jeA96zq7rblIQE+JvB4VfX4khsTBM9QZDSforaD4Z41iKJojSTJP3kHJE3TuVMA/KzIxVbrq7lCwSuIbAN5gOQ5q3rfQpFj5z4A+YRVXdvloB2sJcBoRXXnYgPFsUWr9RGAbBwsLpInxZiRNEnOG8+7zfr+0TgIjkHkAavat1wfzABwVvWejmAmCsNtBhikMYkBxtfXal/Hzj0kwBcCBBXVRhSGPwqw1qpu7A0IghMQeZieN7iSURE7NwzyNQC/S5o+TWOyUTFq6/XhnoCmc1tIjglwBmk6tNJhF0XRAJLkM8m6PU0320bjp56A+asWBC9C5GBb8AOAyx0jovMz69q7AGT1211RHckLer5o550bTIC9JLcKMPgfgGxEZKN5zCMP3F6vh53a6/NkXiMl/2t71R38C20ceSg+T9PvAAAAAElFTkSuQmCC"/></a>
+            <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAetJREFUSEvFlcFrE0EYxd+btDF4ERQhbhJ2shL16EEq9CBSqHip+AcIgqJCvdSTB/8ALwoetMWLaKH/gEhREcSDHgQPggcFN7PZbnLyJiqlZD6pNCGkye4sEjrHmTffb943bxhiwoMTro+9B4RheGBfoXATwGUAx3YcfyHwjMXisud5v9O6kOogSZJD6HbXITIzpsibqVLpYrlc/jUOkg4w5jnIhYwTrlW0vpQbEEXRkSmg4xICVSwe9jzvxyjtWAdxs3lGKfXOCUCe8nz/Uy5Au9WaF5HXLgCx9nQtCD7mA0TRrADvXQCw9mQ1CD47AdpxfEG63asgEwCLLgABHhE4LsDTmtZrg3t23UESRXMAngDwXYoPaEKQS1Xff5EK2F40xpSmlboLkSVHyP0/W1t3Go3G5rB+bIoSYx6DvO4IWKlqPbKdIwGdZvOcVeqVY/GebK6q9dtUByLCJI6vUeQhgOmcgE2I3KhovUpSenv7DjaMOQ9ymUA9Z+FheaisXfSC4N8b6gPardaCiDwAEPwn4DvIW7007bqDjjEnLLn9wA7mBP1UIjNevf41M6Ybxpzt95CcB3AbQGEIaEXkHsmXIiIg99e0XneO6aAwjuOjytpVALM78x9o7ZVKEHzLcrn3X2bWCbPWJ+7gLwOsmxkin26yAAAAAElFTkSuQmCC"/></a>
+            <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAbpJREFUSEvNlU1rE1EUhp8TEuhGECoU02l7phBwIyhkVVx0IfobBHEhlEJd+E90VRGlKxH8DYKIbhRXWl1JYW7sTGyh7aooYYY5MpKJzYeS2ybgLO89533Oxz1nhCl/MmV9hgBRFM1UK5V1zO4LhOMEYBBV4MGPNH3aaDQ6J336AMnOzoJVqy+BS+MIj7D5ksENVf1e3vUAZlZNWq0PwFWgjch6pVZ7X6/XD/4Fa7fbFyzLVizPnwBzwJtAdXUIkDi3YbAJ7KdmV8Iw3PPJIo7jgCz7DJwXs1vzYfii8O9lEEfRNiKXDW4vqD73ES9td1utNTErMnkVqF7vBzj3E5hJzS76Rl8Cuj38BhwFqrODACsOAtUzPd3YuT6dPyUauDhNiQofb0Di3KbBhsCjedV7hcioszIgb0DpcLJ8o85ODZh6Br698C7RfwXoTvMucByonpv4HCTO3TXYAt4FqisTBXSj/wjMInInWFp6NhFAsU3pdK7lIo+LbSoib+uLi6si8nuihybZt6kD9p9qeX5zbnl5f2hdx869Bnp73BP0FbOHe4eHW81mM/3rH81TdCzzM23OcQhTB/wCTErxGVkbYq8AAAAASUVORK5CYII="/></a>
+            <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAitJREFUSEvdlc9LVFEUxz9nxqGgaFVgznu8e0cigikiWtWyCIqgH4QUQotaRLgviqI/wDYtjDYhgps2LoLAhZuINlJQ1CIQe+/pGx0MIUgZy5l34gkO6sw8HcGNZ3nPud/P/Z5733nCDofssD67DFAul/d1dnYuprVtfmLiQCWXewZcBiywrDDgeN7jmcnJw3R0XOnyvAER0USn3iJVzZbC8Ltmsz2u635rBYmCYAw41yQ/Bbiieitv7ZvVfB0w6/umJuIDv0TkWt7zPm4UmQmCUzF8bgVX+CTwHtVhx9ov6xz4vr83J/IH6EgSCq9r8NQYM7sqOB0EvQLDKS1cRLXPsXaowUGyEAVBcuozawVU9UNG5G0tjsclmz0pqi9SAIOOMXfW5ustmpub21+tVI7GqqPAwe18Hwr9rjEPmgKiKHKoVkNgHji0HYBAX96Yl00BqpopheFPwNuOeLIno3qsy9ofTQHJ4nQQXBdIntjKRbcTCr5rTGHjnoZREYVhD3H8BJHj7QBQve9Y+2pTwHQQXBJ415Y4TP1eWDhSLBb/bQpYea6+P4TI7S1CqhrHZ91CYbxZfdNpmlx45PtFyWQeATdTQCqqd/PWDraqaQAkA2+5UjktIg+BiyniSwq9rjEjaU7rgFIYnlfV58CJtUOwhe1RarV7+e7uZMClxjoHySheyuVuqOpVRC4Ae4C/QBkoqeqYqI44hcLXzYRX87vsj7ZV2+3U7XiL/gO8TcUZpD76CwAAAABJRU5ErkJggg=="/></a>
+            <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAZFJREFUSEvtlT1Lw1AUht8TIeCkOCi1CTlJwQ6iIHbxAxz8GeIfEBwEFyd3QRDBfyD9GeIgguIsItreNAk4iOCiQ+k9kpLUfrk0rYsGAvfekOc55735IIz4oBHz0SPwfd8zTVPncjk1DHmHIFDqlIDdBHxsMe9nlbQEUaVSFMN4aAcaWvOs5/lZJN+CKCpKvd4hqIu4rutmiqojolCpMwA7zYqJTizH2ctSfRPTDQifn+fiTZ627aes8B5BpNSqFjET8KftujfxOFJqSYtMNNdFPmzPuw2CYMoQWRetF4hoTBtG2e5TVHdELwBmEkHFYi7E41CpKwBryfojiRwKUbkrAU1EB3nHOWrvfBDBG4Dx5OyX4qbFfJFeGESQ3huLagAWARhtwHKeeSur4Nxi3o4hQbW6QUSXKVCAe5t5Ppug0ShahcJjCgl9vwYRO5m/W8yTmQQvr69mqVSqp5BAqTsCltO5xdyK/sc9EKBqM3t9niLkHccgIml1oNQ1gJV/Qfqi/eWIhvH17Gb8/k9/2F18Abu1+RlmzzScAAAAAElFTkSuQmCC"/></a>
+          </div> 
+
+          <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAp9JREFUSEu1ld2LTGEcxz+/M2fZ5KXIGjNn9nmGib1YVmxygWLLhnLrpbhYKQoXq1z4A8gNbQgXFJLyB8iVQsiN3ZTI7sw5u2cMLZbIWmPOPDo1ZN/OTO3uc3ue5/v5vX1/R5jhIzOsz6SAd9lsY9m291qwwxjTUgmkW+Cese07juPkawluHOBzb+/8n7Z9C5FdEQIGkbtWXV1HIpEYjgKNAhQKhTnlYvE50Az8EmOuliyrSymVC0X6+/uXWcZ0ChwCZgHPP3z6tKm1tfX3ZJBRgLzn3QT2I+JbxrQntH490UM/l1stlnUfWAqcc7Q+URXg+/4qCYKXQElgfVLr7qjUB3K5zZZlPQSKZctKNzY2Fia6/y8D3/MuCBw1cDGl9bFaGvjO824b2Icxp5x0+kwkIO95vUAmEGlWSr2qBZD3vC3AA2PM41Q6vbka4AcwJ6lUTETKtQB8318oQfAZGHK0XlQN8A2YZ9fXz43H4yGs6hkcHJxbHB7+Dnx0tG6oBugBWixYl9D6RVV1IO+6GxB5FpbJ0botusmue1ZETiJyxVHqSI2AG4gcELiQ1Pp4dAbZ7ApisTdAUMuYFgYGNpXL5UehaFTWo4zme941gY7QtATBNmf58rcTRZV33TWIhEZbgshVR6nDVY0WXhizKkaAy1IqnU9mMn74PR9madudGHMQsCuiz2aPjLQvbmoKmz3ujFt22Wx2wexY7DawM6IPXwVOG9gDrAW6fxuzNZ1Ofx37ZtJ1/d51dSCyD9huYLXATyCcrqeByCWl1JeKDx6E0wf0mFisLZVKDf0PmfIPpwJ5AjRhTK8dBBvjmczgX8iUAaHQh76+hpJthxO1UuBgUuvr0woIxVzXjduWtTulVNe0lqiaIaelRFGQGQf8AZhn+BlpKYuyAAAAAElFTkSuQmCC"/></a>
+
+
+        </nav>
+
+        <section class="partie1">
+            <div class="top">
+            <h1>JANE BLOGLIFE</h1>
+            <p>Welcome to the blog of <span>Jane's world</span></p>
+        </div>
+            <div class="image">
+                <p>Jane's<br><br>
+                    <span>FASHION BLOG</span></p>
+                    <button>SUBSCRIBE</button>
+            </div>
+        </section>
+<!-- ---------------------------------partie2------------------------------------ -->
+
+        <section class="partie2">
+            <div class="left2">
+                <div class="image2">
+                <h3>TITLE HEADING</h3>
+                <p>Title description,<span> May 2, 2016</span></p>
+                <img src="image2.jpg">
+            </div>
+                <div class="text">
+                <span>More Hats!</span> I am crazy about hats these days. Some text about this blog entry. Fashion fashion and mauris neque<br>
+                 quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus <br>
+                 porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent<br>
+                  tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non<br>
+                   fringilla.<br><br>
+
+                Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor<br>
+                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                 
+                </div>
+                 <div class="like">
+                    <button><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAQhJREFUSEvV1b0uBVEQwPHfVSl1GiQ0vnqeQSs6vRfQ+ahI3Ci8gFYp0XgBnegJnVAqFRINmcSVYyPO7r3nFE65mf3/Z3bOzPZUPr3KfF0F29hFH8dtkusi2MRZAp3FY07SVrCGS4wlwBk8lxCs4ArjCSzAIcieXAXzuMZEg3SI/SydbJOfMP0LaBH3XQUbiMwi60FlH20gjZgH7OE8nqef6BZLX8GjCAJxh+WmIM12VME3O63gXwliAGMQf/SgZAWxUk5qCV4xibdagiPsDK5u6Sa/YwovtQSn2EoHr2QFcUnmmiu85CRfYL25WlJB7KIDLAy5i1Zx85dgiL2WfyX3P8gTMhHVBZ9JhDUZhzup1AAAAABJRU5ErkJggg=="/>LIKE</button>
+                    <button class="replie">Replies<span>1</span></button>
+                 </div>
+
+                 <hr>
+                <div class="bottome2">
+                    <div class="gauche">
+                        <img src="avatar_smoke.jpg" alt="">
+                    </div>
+                    <div class="droite">
+                        <p>George <span>May 3, 2015, 6:32 PM</span></p>
+                        <p>
+                            Great blog post! Following</p>
+                    </div>
+                </div>
+
+                </div>
+
+                <div class="right2">
+                    <div class="top22">
+                        <img src="avatar_girl2.jpg">
+                         
+                         <div class="pspan"><span>My Name</span><br><br>
+                            Just me, myself and I, exploring the universe of <br>
+                            uknownment. I have a heart of love and a interest of<br>
+                            lorem ipsum and mauris neque quam blog. I want to<br>
+                            share my world with you.
+                        </div>
+                    
+                    </div>
+
+                    <div class="milieu22">
+                          <div class="top222">
+                            <p>Popular Posts</p>
+                          </div>
+
+                          <div class="milieu221">
+                            <img src="avatar_smoke.jpg">
+                            <p><span>Denim</span><br>
+                                Sed mattis nunc</p>
+                          </div>
+
+                          <div class="milieu222">
+                            <img src="bandmember.jpg">
+                            <p><span>Sweaters</span><br>
+                                Praes tinci sed</p>
+                          </div>
+
+                          <div class="milieu223">
+                            <img src="workshop.jpg">
+                            <p><span>Workshop</span><br>
+                                Ultricies congue</p>
+                          </div>
+
+                          <div class="right22">
+                            <img src="avatar_smoke.jpg">
+                            <p><span>Trends</span><br>
+                                Lorem ipsum dipsum</p>
+                          </div>
+
+                    </div>
+
+                    <div class="bottome22">
+                        <p>Advertise</p>
+                        <div><p>Your AD Here</p></div>
+                    </div>
+                </div>
+                
+        </section>
+<!-- -----------------------------------partie3----------------------------------------------------- -->
+        <section class="partie3">
+            <div class="left2">
+                <div class="image2">
+                <h3>TITLE HEADING</h3>
+                <p>Title description,<span>  April 23, 2016</span></p>
+                <img src="man_hat.jpg">
+            </div>
+
+            <div class="text">
+                <span>Hats! </span> The trend this summer is hats for men!<br><br>
+
+                Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis<br>
+                 maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor<br>
+                  cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae<br>
+                   justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.
+                
+                
+                </div>
+                 <div class="like">
+                    <button><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAQhJREFUSEvV1b0uBVEQwPHfVSl1GiQ0vnqeQSs6vRfQ+ahI3Ci8gFYp0XgBnegJnVAqFRINmcSVYyPO7r3nFE65mf3/Z3bOzPZUPr3KfF0F29hFH8dtkusi2MRZAp3FY07SVrCGS4wlwBk8lxCs4ArjCSzAIcieXAXzuMZEg3SI/SydbJOfMP0LaBH3XQUbiMwi60FlH20gjZgH7OE8nqef6BZLX8GjCAJxh+WmIM12VME3O63gXwliAGMQf/SgZAWxUk5qCV4xibdagiPsDK5u6Sa/YwovtQSn2EoHr2QFcUnmmiu85CRfYL25WlJB7KIDLAy5i1Zx85dgiL2WfyX3P8gTMhHVBZ9JhDUZhzup1AAAAABJRU5ErkJggg=="/>LIKE</button>
+                    <button class="replie">Replies<span>2</span></button>
+                 </div>
+
+            </div>
+
+            <div class="right3">
+                <div class="top33">
+                    <p>Tags</p>
+                    <div class="span33">
+                        <span class="spn1">Fashion</span> <span>New York</span> <span>London</span> <span>Hats</span> <span>Norway</span><br><br>
+                        <span>Sweaters</span> <span>Ideas</span> <span>Deals</span> <span>Accessories</span> <span>News</span><br><br>
+                        <span>Clothing</span> <span>Shopping</span> <span>Jeans</span> <span>Trends</span>
+                    </div>
+                </div>
+
+                <div class="milieu33">
+                    <p>Inspiration</p>
+                    <div class="image33">
+                        <img src="jeans33.jpg">
+                        <img src="jane34.jpg">
+                        <img src="jane35.jpg">
+                        <img src="jane36.jpg">
+                    </div>
+                </div>
+
+                <div class="bottome33">
+                    <p>Follow Me</p>
+                </div>
+
+                <div class="social33">
+                    <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAOpJREFUSEvt1TFOAkEUh/EfnY2cgNJYWVlQEiiUC3gDLY1UXsATQKjhDrZggq2JlVaGhIqEC5hQQjSDblYhhJklFm41yWa/b97778wrKfgpFcy3d8EI9ciqHtFYMfIVLCLhP7gxgo/NTDAN1FMchvUXd1fBCy4wzlT8hGoKwTuOMcu1M5lgiPMAr+EudYv6uAzQNlq//BhRGWQFXVynEtziOfT+LUCPUAnre5RjQm5isOacHGCeebdTizYJTvAaK1h9X1gG/4LPDmxzm/7tDLYZOD1chcQ7uMmdjQecrRs4iebNN2bvMzl5BUtsbjkZn+taawAAAABJRU5ErkJggg=="/></a>
+                    <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAhZJREFUSEvF1UvIT1sYBvDfhyLCRGfkVigkOSeShAFSSnLJ3cQEZ6DIpchAiVxCRgYMJLdco5SYSUkk5XY60emUCSMycu/R+tdu9999X+rrW/Xvv/e73vU+z/s8a63doZtHRzfX12MAo7AFMzCBRiI/8Az3cAz/1hVp18EGHEcf/I8HeNUg5V+YhGH4gr9xsppbB5hcCr7AIrzuokfp8gaGYwqetNbVAa5iPsbivy4UX4s9+IB1eITrWNIEkKJhH5Dq6IW5GI9veIm7JXa7SDmiAAzByCaAjziLjZXq0fciptVAY+wpvMMfOI0oMA8DmgC+4zC2l4Qwv18YbcUd9C7MD5ZdMxPZTRkhsrTk/ArUPUjifuwsC5aVRfm/VOtgOS5gYTE40+eReIg1AoTZjjKf520YiE81gGj9Hnuxu8xF3lVV4u06yIHZXBYcKHINRvypjhbAPuwqE2ewpjOAo+UUZ0222+Wi65UaQJiGcVWivK/ozINqBy2TswUjVUzOCZ+DQ/gHs2omB7BfkwfROSzWV9gOLWZOb7NNV+JtJZ5tOhuRtK3Juazya3fQwmwBPuMWblaYt+o9xiCMaQII+8UY18WrotrURDzFOaxuAvgTYZHEGPymJkvTa4pfQ7yaWmq0lSjB1nUdgx8WSRL/iufoi9HF7MT7I7dw5jfhRJVF0xftdz44R9pd7z32yeyi9J2ndXsHPwHCfnMZO3GOhQAAAABJRU5ErkJggg=="/></a>
+                    <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAWRJREFUSEvV1L9LlVEcx/HXRQRpCQyHpkhBGx1EwSFCKFwU/wBBMDTQRScH/4AWhYZSXKIC/wGRUAmkwQahQXBQ0E2c3MTARePE88T1cp97zpMIedbzOZ833x/nU3HHp3LH/v4LwENMYwydWcX7+Iwl/GrUhVgFj/AVvQUm3zCCiyJIDLCGocicVjH6L4DHOE1cgjac1dM2quA5vicCevCzLOAlthIBfdgtC+jHTiKgG3upgGG8xgmmEgEf0IVPCEP/e+rNYAAf8STRPJcdYwbrMUC4b8Hb7EEKZxHzuKwVN9qiFUymuGO5qJ1FgFfYTDTPZaG127EKAnAC79FcEhDa8wZfcJ2/ra5gMAuvpyWNa+Vh2GH7/vyhakDInHdovyXgCLP5NtWbwbPsg7WWBJ1nqXuQsqYvqkQhMubQVAO8wgI2sp4/yKL9hiwW17m4IxteiI9wfmAch7EqUwExn8L7+w/4DcIkNBnfK/nOAAAAAElFTkSuQmCC"/></a>
+                    <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAcBJREFUSEvV1E+IjlEUx/HPiDL+REoSKY2F/8RiREqUjckGC0VKlIQspmaj2KJZTI0kirCwwFIpJRSSxUz+RClKLORvSRSNTp2pB+87z/O+NTXO6rnde37fe879nafFMEfLMOsbEYApOIR2zEasX+IuzuPWUF0oq6ADJzET7/EE4zEf41L4BA7iZy3QUIAdOIdf2IdTGEiRyNuG45iGa9iYZ//g1AMsRD9GYTOu1GnDatzOva249Pe5eoAoe2/eek+25GK+QcDfFIQeYnlWsaEq4CnmYVU+5g2sy+TdOFMQiofejueYWxXwFtMxA/E9uI78tbhZA/Aas6oC7mEFFuEx+rAknTIJ3wpC99PCkbOyKuAIDuMsduIyNqXn1xREJuIDxqAX+6sCYpgepIvm4CPi5sfQVRA5gJ5cL03nVbJpHIrbRcmv8CyzAroeX7AA0Z4JCNfFrPwTZZMcCbtwGt8xFl/zTQIecxK/jWX43CzgQk7tVVzHUbTiTroppj1cVjOqVPACbehEdz2hZgGj8SNbET2PAWwoyiqYind4hMUNKefhMsBkfMKWnIWGGWWA2B/81zQsHgllgKZEi0n/P+A3VolTGdLXkAIAAAAASUVORK5CYII="/></a>
+                    <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAYpJREFUSEvd1bFLVmEUx/HPa0GC0VRDoJhBRFAR4aSjERSBKSFF0JCDSHtRFP4BujgoLRGBS4uDIDS4iLiEgVFDk1EQBeEkQZqgHLgvXG73Xu/7wrv4bPc5z/l9n3Oec86tafGqtVjf4QN04M8BaTuBCdxCD/5hBs9wGoPJ917opFN0BJ8xgk8lkCUM5Ni/owv38LZuTwPO4Ct+YwirOSJX8aEEvoZlzGE9G0E7tnA0EXiFF/iZEryfOBcxIr2P8CYvgtiLW/dlvFewgPe4gumSCF7jYdqeTtFxnMc7nGyyPybxuAjQiW/YxKkmAZGe2SJAGzbQ3aR4uF3AlyJA7A8nJVZ/6EZYUYFnsw55oyL64DkuNaKOcbysAriJxQbFo8nOYacKIM5EHT+oCNlFf1LG/7kUTdN48It4irsloJg3o4j6z115gBh4vXiCGyXifxGdPV8WaRpwDVO4nBmCef7RjGOI3JeubAQxiu/gNq7jGLbxCz8QkzRu/PEg4br98P3RqkZe+VzLU7QP6ls9Gf+7N38AAAAASUVORK5CYII="/></a>
+                    <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAShJREFUSEvt1U0rRkEYxvHfQykrsrFSXoqFKFl5KQsfQ76AslA2VvZKSfkG8jFkIUXWkuRtZaVsWCg0NUfTOFHPeLJg6tQ953Rf/3uue2ZOQ4tHo8X66gCDeMXNT8BzwDaWo/AmVkshKWAE55lgP25LIN8BBkqtyi3awVKseAsrJdWH3LomD8cmX5aK1wGm0RGFn3Ec4wl0xfgJJ+jBLMbQjj18KipfwT16o9AVhmJ8iJkYX2A9Cqb5YWuvYSNdeTOAB3TGp87FeexXH5oBVLkBdIdxtCWkYNVCKWAXi1FkDgcJ4AyjpYBwKEMvqhFW0hcnj+guBYSd9pIATjGZzD+s/6oH1wgXXxjpLgrz4PlbIniEqX9AddD+uEV1R7/o3a/89IsqzpPfAXF0UxkpbL/qAAAAAElFTkSuQmCC"/></a>
+                  </div> 
+            </div>
+            
+        </section>
+
+        <section class="partie4">
+            <div class="left2">
+                <div class="image2">
+                <h3>TITLE HEADING</h3>
+                <p>Title description,<span>   April 7, 2016</span></p>
+                <img src="runway.jpg">
+            </div>
+
+            <div class="text">
+                <span>Dont miss! </span>  The runway in New York City this weekend is gonna be legendary!<br><br>
+
+                Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis<br>
+                 maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor<br>
+                  cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae<br>
+                   justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.
+                
+                
+                </div>
+                 <div class="like">
+                    <button><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAQhJREFUSEvV1b0uBVEQwPHfVSl1GiQ0vnqeQSs6vRfQ+ahI3Ci8gFYp0XgBnegJnVAqFRINmcSVYyPO7r3nFE65mf3/Z3bOzPZUPr3KfF0F29hFH8dtkusi2MRZAp3FY07SVrCGS4wlwBk8lxCs4ArjCSzAIcieXAXzuMZEg3SI/SydbJOfMP0LaBH3XQUbiMwi60FlH20gjZgH7OE8nqef6BZLX8GjCAJxh+WmIM12VME3O63gXwliAGMQf/SgZAWxUk5qCV4xibdagiPsDK5u6Sa/YwovtQSn2EoHr2QFcUnmmiu85CRfYL25WlJB7KIDLAy5i1Zx85dgiL2WfyX3P8gTMhHVBZ9JhDUZhzup1AAAAABJRU5ErkJggg=="/>LIKE</button>
+                    <button class="replie">Replies<span>3</span></button>
+                 </div>
+            </div>
+                 <div class="right4">
+                    <p>Subscribe</p>
+                    <div class="formule4">
+                        <p>Enter your e-mail below and get notified on the latest<br>
+                        blog posts.</p>
+                        <input type="email" name="mail" id="mail" placeholder="Entrer e-mail" ><br><br>
+                        <input type="submit" value="Subscribe"> 
+                    </div>
+                 </div>
+
+            
+        </section>
+
+        <footer>
+            <div class="top-foot"><a href="#social"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAadJREFUSEvtlcFKW0EUhr+JEVdmYnIi6qK7QDcWWhCkiJSi9R10477pC5TuuugDaNelC30Iq7iRIhQqVKGL7FxYMWP0pquWJKckJHCT3smEqis7yzvn/t+Z+WbuNdzxMHecz9AAVR2pXV4eAM1MPr9ojGkM09zQgMi5TeBlJ3TTiry6NUDNuXWFD8CPTui0gfWMyMcQJLiC60rliTHmM5DGmIV2oGprq+qq+jRbKHwdBBkI+Hl+PtlMp4+AGaBkRd63wiLnSsAGcJaq1x+PT01d+CBeQEzqPLBtRdbiIZFzW8AqcJjJ5xd80r2ArlSFY3t1NWeKxV9xgJbLY9HExBcDs4BXeiIgqlRWMabVYdRIpR7lcrnTpC2oVqsPRprNb4BFdc0WCtv9dX8BYlJHFVayIruDJF47t2RgB/idJL0HEJeq8Dor8i50DDvS3wBvk6T3AGrO7Sk8Twq1Ij21kXPqgX+yIi+6c/0vfQce3gSgcJIVaYlvj+BF63bqW0H/86Dk/oL/gHvkwHfhbnyKas7tKzzzAHatyPI//w+G+UyEaoKSQwGh+T8x8cgZ69z5GQAAAABJRU5ErkJggg=="/><span>To the top</span></a></div>
+            <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp">W3.css</a></p>
+        </footer>
+
+
+
+    </body>
+</html>
